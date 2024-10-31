@@ -8,7 +8,7 @@ cd /root/soft;
 wget https://golang.google.cn/dl/go1.22.0.linux-amd64.tar.gz;
 sudo tar xfz go1.22.0.linux-amd64.tar.gz -C /usr/local;
 
-echo "\nexport GOROOT=/usr/local/go\nexport GOPATH=\$HOME/gowork\nexport GOBIN=\$GOPATH/bin\nexport PATH=\$GOPATH:\$GOBIN:\$GOROOT/bin:\$PATH" | sudo tee -a /etc/profile
+echo -e "\nexport GOROOT=/usr/local/go\nexport GOPATH=\$HOME/gowork\nexport GOBIN=\$GOPATH/bin\nexport PATH=\$GOPATH:\$GOBIN:\$GOROOT/bin:\$PATH" | sudo tee -a /etc/profile
 source /etc/profile;
 
 # install zmq 
@@ -29,6 +29,7 @@ git clone https://github.com/drinkthere/okxmm_utils.git
 cd okxmm_utils;
 npm install;
 
+cd /root/code
 git clone https://github.com/drinkthere/bestpath.git
 cd /root/code/bestpath;
 make build;
