@@ -26,4 +26,9 @@ netplan apply;
 mkdir /root/code;
 cd /root/code;
 git clone https://github.com/drinkthere/okxmm_utils.git
+cd okxmm_utils;
+npm install;
+
 git clone https://github.com/drinkthere/bestpath.git
+cd /root/code/bestpath;
+make build;
