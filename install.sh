@@ -32,3 +32,4 @@ npm install;
 git clone https://github.com/drinkthere/bestpath.git
 cd /root/code/bestpath;
 make build;
+mkdir bin/logs;
